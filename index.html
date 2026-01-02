@@ -3,689 +3,853 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para minha melhor amiga Duda</title>
+    <title>Para Duda - Minha Amiga Especial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Playfair+Display:wght@400;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
-        :root {
-            --primary: #ff6b9d;
-            --primary-light: #ff9ac8;
-            --primary-dark: #e91e63;
-            --secondary: #6a5af9;
-            --secondary-light: #8a7cff;
-            --accent: #ffcc00;
-            --light: #fff9fb;
-            --dark: #333333;
-            --gray: #6c757d;
-            --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            --transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            --gradient: linear-gradient(135deg, #ff6b9d, #6a5af9);
-            --gradient-light: linear-gradient(135deg, #ffd6e7, #e0d5ff);
-        }
-        
+
         body {
-            background: var(--gradient-light);
-            color: var(--dark);
-            line-height: 1.6;
-            min-height: 100vh;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f1a2b 0%, #1a2b3c 50%, #253546 100%);
+            color: #e6f2ff;
+            line-height: 1.8;
             overflow-x: hidden;
+            min-height: 100vh;
         }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        /* Header e título */
-        header {
-            text-align: center;
-            padding: 60px 30px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 25px;
-            box-shadow: var(--shadow);
-            margin-bottom: 40px;
-            position: relative;
-            overflow: hidden;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        .decorative-bg {
-            position: absolute;
+
+        body::before {
+            content: '';
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ff6b9d' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
-            opacity: 0.5;
-            z-index: 0;
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(100, 150, 255, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 85% 30%, rgba(100, 200, 255, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 50% 80%, rgba(150, 200, 255, 0.05) 0%, transparent 20%);
+            z-index: -1;
         }
-        
-        h1 {
-            color: transparent;
-            background: var(--gradient);
-            -webkit-background-clip: text;
-            background-clip: text;
-            font-size: 4rem;
-            margin-bottom: 15px;
-            position: relative;
-            z-index: 1;
-            font-family: 'Dancing Script', cursive;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
-            letter-spacing: 1px;
+
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
         }
-        
-        .subtitle {
-            font-size: 1.6rem;
-            color: var(--gray);
-            margin-bottom: 30px;
-            position: relative;
-            z-index: 1;
-            font-weight: 500;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .highlight {
-            color: var(--primary-dark);
-            font-weight: 700;
-            background: linear-gradient(transparent 70%, rgba(255, 107, 157, 0.2) 70%);
-            padding: 0 5px;
-        }
-        
-        /* Seção da foto */
-        .photo-section {
-            margin: 40px 0;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .photo-frame {
-            display: inline-block;
-            position: relative;
-            padding: 20px;
-            background: var(--gradient);
-            border-radius: 25px;
-            box-shadow: 0 15px 35px rgba(106, 90, 249, 0.3);
-            transition: var(--transition);
-            animation: float 6s ease-in-out infinite;
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-15px); }
-        }
-        
-        .friend-photo {
-            width: 250px;
-            height: 250px;
-            border-radius: 20px;
-            object-fit: cover;
-            border: 8px solid white;
-            display: block;
-            transition: var(--transition);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-        
-        .friend-photo:hover {
-            transform: scale(1.03) rotate(2deg);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-        }
-        
-        .photo-label {
-            margin-top: 20px;
-            font-size: 1.5rem;
-            color: var(--primary-dark);
-            font-weight: 700;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-            position: relative;
-            display: inline-block;
-        }
-        
-        .photo-label::after {
-            content: '';
+
+        .particle {
             position: absolute;
-            bottom: -5px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 50%;
-            height: 3px;
-            background: var(--gradient);
-            border-radius: 3px;
+            border-radius: 50%;
+            background: rgba(100, 200, 255, 0.15);
+            animation: float 20s infinite linear;
         }
-        
-        .quote {
-            font-style: italic;
-            font-size: 1.3rem;
-            color: var(--gray);
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 30px;
-            background-color: white;
-            border-radius: 20px;
+
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.3; }
+            90% { opacity: 0.3; }
+            100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
             position: relative;
-            z-index: 1;
-            box-shadow: var(--shadow);
-            border-left: 8px solid var(--primary);
-            line-height: 1.8;
         }
-        
-        .quote::before {
-            content: '"';
+
+        header {
+            text-align: center;
+            padding: 80px 0 60px;
+            position: relative;
+        }
+
+        .header-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(100, 180, 255, 0.15) 0%, transparent 70%);
+            z-index: -1;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 5.5rem;
+            color: #fff;
+            margin-bottom: 15px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            text-shadow: 0 0 30px rgba(100, 200, 255, 0.5),
+                         0 0 60px rgba(70, 150, 220, 0.3);
+            position: relative;
+            display: inline-block;
+        }
+
+        .title-decoration {
             position: absolute;
             top: -20px;
-            left: 20px;
-            font-size: 5rem;
-            color: var(--primary-light);
-            font-family: 'Dancing Script', cursive;
-            opacity: 0.3;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            color: #64b4ff;
+            opacity: 0.7;
         }
-        
-        /* Cards */
-        .content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
+
+        .subtitle {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            color: #a8d2ff;
+            font-weight: 300;
+            margin-top: 30px;
+            font-style: italic;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .friend-name {
+            color: #64b4ff;
+            font-weight: bold;
+            text-shadow: 0 0 10px rgba(100, 180, 255, 0.5);
+        }
+
+        .section {
+            margin-bottom: 80px;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
             margin-bottom: 50px;
         }
-        
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: #fff;
+            font-weight: 400;
+            display: inline-block;
+            position: relative;
+            padding-bottom: 15px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #64b4ff, transparent);
+            border-radius: 3px;
+        }
+
         .card {
-            background-color: white;
-            border-radius: 25px;
-            padding: 30px;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
+            background: linear-gradient(145deg, rgba(37, 53, 70, 0.8), rgba(26, 43, 60, 0.9));
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            border: 1px solid rgba(100, 180, 255, 0.2);
+            margin-bottom: 30px;
             position: relative;
             overflow: hidden;
-            border-top: 5px solid transparent;
         }
-        
+
         .card::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
-            height: 5px;
-            background: var(--gradient);
+            height: 100%;
+            background: linear-gradient(45deg, transparent 30%, rgba(100, 180, 255, 0.05) 50%, transparent 70%);
+            z-index: 1;
+            pointer-events: none;
         }
-        
+
         .card:hover {
-            transform: translateY(-15px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+            border-color: rgba(100, 180, 255, 0.3);
         }
-        
-        .card h2 {
-            color: var(--dark);
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-size: 1.8rem;
-        }
-        
-        .card h2 i {
-            font-size: 1.8rem;
-            color: var(--primary);
-            background: rgba(255, 107, 157, 0.1);
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-        }
-        
-        /* Memórias */
-        .memories ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        
-        .memories li {
-            padding: 15px 0;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-            display: flex;
-            align-items: flex-start;
-            gap: 15px;
-            transition: var(--transition);
-        }
-        
-        .memories li:hover {
-            transform: translateX(10px);
-            background: rgba(255, 107, 157, 0.03);
-            padding-left: 10px;
-            border-radius: 10px;
-        }
-        
-        .memories li:last-child {
-            border-bottom: none;
-        }
-        
-        .memories li i {
-            color: var(--primary);
-            font-size: 1.2rem;
-            margin-top: 3px;
-            flex-shrink: 0;
-        }
-        
-        /* Qualidades */
-        .qualities {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 20px;
-        }
-        
-        .quality {
-            background: linear-gradient(135deg, rgba(255, 107, 157, 0.1), rgba(106, 90, 249, 0.1));
-            color: var(--primary-dark);
-            padding: 10px 20px;
-            border-radius: 50px;
-            font-size: 0.95rem;
-            font-weight: 500;
-            transition: var(--transition);
-            border: 1px solid rgba(255, 107, 157, 0.2);
-        }
-        
-        .quality:hover {
-            background: linear-gradient(135deg, rgba(255, 107, 157, 0.2), rgba(106, 90, 249, 0.2));
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        }
-        
-        /* Mensagem */
+
         .message {
-            line-height: 1.9;
-            font-size: 1.1rem;
-        }
-        
-        .message p {
-            margin-bottom: 20px;
-        }
-        
-        .signature {
-            text-align: right;
-            font-weight: 700;
-            font-size: 1.4rem;
-            color: var(--primary-dark);
-            margin-top: 30px;
-            font-family: 'Dancing Script', cursive;
-        }
-        
-        /* Footer */
-        footer {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
             text-align: center;
-            padding: 40px 30px;
-            color: var(--gray);
-            background-color: white;
-            border-radius: 25px;
-            box-shadow: var(--shadow);
+            line-height: 1.9;
+            color: #d1e7ff;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .highlight {
+            color: #64b4ff;
+            font-weight: 600;
+            text-shadow: 0 0 10px rgba(100, 180, 255, 0.3);
+        }
+
+        .qualities-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .quality-item {
+            background: linear-gradient(135deg, rgba(45, 65, 85, 0.8), rgba(37, 53, 70, 0.9));
+            border-radius: 15px;
+            padding: 30px 25px;
+            text-align: center;
+            transition: all 0.4s ease;
+            border: 1px solid rgba(100, 180, 255, 0.2);
             position: relative;
             overflow: hidden;
         }
-        
-        .friendship-heart {
-            color: var(--primary);
-            font-size: 3rem;
-            margin: 20px 0;
-            animation: heartbeat 1.8s infinite;
-        }
-        
-        @keyframes heartbeat {
-            0%, 50%, 100% { transform: scale(1); }
-            30%, 80% { transform: scale(1.2); }
-        }
-        
-        .floating-elements {
+
+        .quality-item::before {
+            content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 0;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(100, 200, 255, 0.1) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
         }
-        
-        .floating-element {
+
+        .quality-item:hover::before {
+            opacity: 1;
+        }
+
+        .quality-item:hover {
+            transform: translateY(-8px) scale(1.03);
+            border-color: rgba(100, 180, 255, 0.4);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .quality-icon {
+            font-size: 2.8rem;
+            color: #64b4ff;
+            margin-bottom: 20px;
+            text-shadow: 0 0 15px rgba(100, 180, 255, 0.5);
+            position: relative;
+            z-index: 2;
+        }
+
+        .quality-text {
+            font-size: 1.3rem;
+            color: #a8d2ff;
+            font-weight: 500;
+            position: relative;
+            z-index: 2;
+        }
+
+        .memories-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .memory {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            padding: 30px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, rgba(52, 72, 95, 0.7), rgba(45, 65, 85, 0.8));
+            border: 1px solid rgba(100, 180, 255, 0.15);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .memory:hover {
+            transform: translateX(10px);
+            border-color: rgba(100, 180, 255, 0.3);
+        }
+
+        .memory-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            color: #64b4ff;
+            font-weight: 300;
+            min-width: 80px;
+            text-shadow: 0 0 15px rgba(100, 180, 255, 0.5);
+        }
+
+        .memory-content {
+            flex: 1;
+        }
+
+        .memory-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: #64b4ff;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .memory-description {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            color: #c2dfff;
+            line-height: 1.8;
+        }
+
+        .poem-container {
+            position: relative;
+            padding: 70px 50px;
+            background: linear-gradient(135deg, rgba(45, 65, 85, 0.9), rgba(37, 53, 70, 0.95));
+            border-radius: 20px;
+            margin: 50px 0;
+            text-align: center;
+            border: 1px solid rgba(100, 180, 255, 0.25);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .poem-container::before {
+            content: '';
             position: absolute;
-            color: var(--primary-light);
-            font-size: 24px;
-            opacity: 0.1;
-            animation: floatAround 20s infinite linear;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent 30%, rgba(100, 200, 255, 0.05) 50%, transparent 70%);
+            animation: shine 8s infinite linear;
         }
-        
-        @keyframes floatAround {
-            0% { transform: translate(0, 0) rotate(0deg); }
-            25% { transform: translate(100px, 50px) rotate(90deg); }
-            50% { transform: translate(50px, 100px) rotate(180deg); }
-            75% { transform: translate(-50px, 50px) rotate(270deg); }
-            100% { transform: translate(0, 0) rotate(360deg); }
+
+        @keyframes shine {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
-        
-        /* Responsividade */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 3rem;
-            }
-            
-            .subtitle {
-                font-size: 1.3rem;
-            }
-            
-            .content {
-                grid-template-columns: 1fr;
-            }
-            
-            .friend-photo {
-                width: 200px;
-                height: 200px;
-            }
-            
-            .card {
-                padding: 25px;
-            }
-            
-            header {
-                padding: 40px 20px;
-            }
+
+        .poem {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            line-height: 2;
+            color: #e6f2ff;
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
-        
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-            
-            .subtitle {
-                font-size: 1.1rem;
-            }
-            
-            .friend-photo {
-                width: 180px;
-                height: 180px;
-            }
-            
-            .photo-frame {
-                padding: 15px;
-            }
-            
-            .quote {
-                padding: 20px;
-                font-size: 1.1rem;
-            }
+
+        .poem-quote {
+            font-size: 5rem;
+            color: #64b4ff;
+            line-height: 0;
+            position: absolute;
+            opacity: 0.3;
+            z-index: 1;
         }
-        
-        /* Botão de ação */
-        .action-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 15px 30px;
-            background: var(--gradient);
+
+        .quote-left { top: 40px; left: 40px; }
+        .quote-right { bottom: 40px; right: 40px; }
+
+        .secret-container {
+            text-align: center;
+            padding: 60px 40px;
+            position: relative;
+            margin: 50px 0;
+        }
+
+        .secret-button {
+            background: linear-gradient(135deg, #64b4ff, #4682b4);
             color: white;
             border: none;
+            padding: 22px 50px;
+            font-size: 1.3rem;
             border-radius: 50px;
-            font-weight: 600;
-            font-size: 1.1rem;
             cursor: pointer;
-            transition: var(--transition);
-            box-shadow: 0 10px 20px rgba(106, 90, 249, 0.3);
-            text-decoration: none;
+            transition: all 0.4s ease;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            box-shadow: 0 10px 30px rgba(100, 180, 255, 0.4),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+            position: relative;
+            overflow: hidden;
         }
-        
-        .action-button:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(106, 90, 249, 0.4);
+
+        .secret-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.6s ease;
         }
-        
-        .action-button:active {
-            transform: translateY(-2px);
+
+        .secret-button:hover::before {
+            left: 100%;
         }
-        
-        /* Scroll personalizado */
+
+        .secret-button:hover {
+            background: linear-gradient(135deg, #7bc1ff, #5a96cc);
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 35px rgba(100, 180, 255, 0.5),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+        }
+
+        .secret-message {
+            margin-top: 50px;
+            padding: 40px;
+            background: linear-gradient(135deg, rgba(37, 53, 70, 0.9), rgba(26, 43, 60, 0.95));
+            border-radius: 20px;
+            display: none;
+            animation: fadeInUp 0.8s ease;
+            border: 1px solid rgba(100, 180, 255, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .secret-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            line-height: 2;
+            color: #e6f2ff;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        footer {
+            text-align: center;
+            padding: 80px 0 50px;
+            position: relative;
+        }
+
+        .footer-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(100, 180, 255, 0.1) 0%, transparent 70%);
+            z-index: -1;
+        }
+
+        .signature {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: #64b4ff;
+            margin: 30px 0;
+            text-shadow: 0 0 20px rgba(100, 180, 255, 0.5);
+            letter-spacing: 2px;
+        }
+
+        .closing {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            color: #a8d2ff;
+            font-style: italic;
+            max-width: 600px;
+            margin: 0 auto;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .heart-pulse {
+            font-size: 2rem;
+            color: #64b4ff;
+            margin: 20px 0;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.7; }
+            50% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.7; }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            header {
+                padding: 60px 0 40px;
+            }
+
+            h1 {
+                font-size: 3.8rem;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            .card {
+                padding: 30px 25px;
+            }
+
+            .message {
+                font-size: 1.3rem;
+            }
+
+            .memory {
+                flex-direction: column;
+                gap: 20px;
+                padding: 25px;
+            }
+
+            .memory-number {
+                min-width: auto;
+                font-size: 2.8rem;
+            }
+
+            .poem {
+                font-size: 1.4rem;
+            }
+
+            .qualities-container {
+                grid-template-columns: 1fr;
+            }
+
+            .poem-container {
+                padding: 40px 25px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
         ::-webkit-scrollbar {
             width: 10px;
         }
-        
+
         ::-webkit-scrollbar-track {
-            background: rgba(255, 255, 255, 0.1);
+            background: #1a2b3c;
         }
-        
+
         ::-webkit-scrollbar-thumb {
-            background: var(--gradient);
-            border-radius: 10px;
+            background: linear-gradient(to bottom, #64b4ff, #4682b4);
+            border-radius: 5px;
         }
-        
+
         ::-webkit-scrollbar-thumb:hover {
-            background: linear-gradient(135deg, var(--primary-dark), var(--secondary-light));
+            background: linear-gradient(to bottom, #7bc1ff, #5a96cc);
         }
     </style>
 </head>
 <body>
+    <div class="particles" id="particles"></div>
+
     <div class="container">
         <header>
-            <div class="decorative-bg"></div>
-            <h1>Para a Duda</h1>
-            <p class="subtitle">Minha MELHOR AMIGA de todos os tempos</p>
-            
-         
-            <p class="quote">
-                "Uma verdadeira amizade é aquela que nos segue por toda a vida, 
-                nos apoia nos momentos mais difíceis e celebra cada conquista. 
-                Duda, você é esse presente na minha vida."
-            </p>
-            
-            <a href="#message" class="action-button">
-                <i class="fas fa-heart"></i> Mensagem Especial
-            </a>
+            <div class="header-glow"></div>
+            <div class="title-decoration"><i class="fas fa-star"></i></div>
+            <h1 class="fade-in">Para <span class="friend-name" id="friendName">Duda</span></h1>
+            <div class="subtitle fade-in">Uma homenagem à amizade que ilumina minha vida</div>
         </header>
-        
-        <div class="content">
-            <div class="card memories">
-                <h2><i class="fas fa-heart"></i> Nossas Memórias</h2>
-                <ul>
-                    <li><i class="fas fa-star"></i> Aquele dia na praia que ficamos rindo sem parar</li>
-                    <li><i class="fas fa-star"></i> As conversas intermináveis até de madrugada</li>
-                    <li><i class="fas fa-star"></i> A vez que você me ajudou quando eu mais precisei</li>
-                    <li><i class="fas fa-star"></i> Todas as aventuras que vivemos juntas</li>
-                    <li><i class="fas fa-star"></i> Cada risada compartilhada e cada segredo confiado</li>
-                    <li><i class="fas fa-star"></i> Nossas viagens inesquecíveis e planos para o futuro</li>
-                </ul>
+
+        <section class="section">
+            <div class="section-header">
+                <h2 class="fade-in">Para Você</h2>
             </div>
-            
-            <div class="card qualities-card">
-                <h2><i class="fas fa-gem"></i> Suas Qualidades</h2>
-                <p>Duda, você é uma pessoa incrível e estas são apenas algumas das muitas qualidades que admiro em você:</p>
-                <div class="qualities">
-                    <span class="quality">Leal</span>
-                    <span class="quality">Divertida</span>
-                    <span class="quality">Atenciosa</span>
-                    <span class="quality">Inteligente</span>
-                    <span class="quality">Empática</span>
-                    <span class="quality">Corajosa</span>
-                    <span class="quality">Criativa</span>
-                    <span class="quality">Sincera</span>
-                    <span class="quality">Otimista</span>
-                    <span class="quality">Generosa</span>
-                    <span class="quality">Confidente</span>
-                    <span class="quality">Inspiradora</span>
-                    <span class="quality">Acolhedora</span>
-                    <span class="quality">Resiliente</span>
-                    <span class="quality">Fiel</span>
-                    <span class="quality">Adorável</span>
-                </div>
-            </div>
-            
-            <div class="card message-card" id="message">
-                <h2><i class="fas fa-envelope-open-text"></i> Minha Mensagem para Você</h2>
+            <div class="card fade-in">
                 <div class="message">
-                    <p>Querida Duda,</p>
-                    <p>Não tenho palavras para expressar o quanto você é importante na minha vida. Em todos os momentos, bons ou difíceis, você sempre esteve ao meu lado, me apoiando, me entendendo e me fazendo rir mesmo nos dias mais cinzentos.</p>
-                    <p>Você é mais do que uma amiga, é uma irmã que a vida me deu. Compartilhamos sonhos, segredos, risadas e até lágrimas. Cada memória que criamos juntas é um tesouro que guardo com muito carinho no meu coração.</p>
-                    <p>Obrigada por ser exatamente quem você é: autêntica, maravilhosa e a melhor amiga que alguém poderia ter. Que nossa amizade continue crescendo e florescendo por muitos e muitos anos!</p>
-                    <p>Eu te amo muito, minha amiga!</p>
-                    <div class="signature">Com todo o meu carinho,<br>Sua amiga para sempre ❤️</div>
+                    <p>Minha Melhor Amiga Duda</span>,</p>
+                    <p>Em um mundo que muitas vezes parece complicado, você surge como um porto seguro - aquele lugar onde posso ser completamente eu mesmo, sem máscaras ou receios.</p>
+                    <p>Sua amizade é como um farol em noites escuras, guiando-me de volta ao que realmente importa. É o abraço que aquece, a palavra que acalma, a presença que fortalece.</p>
+                    <p>Este espaço é dedicado a celebrar a pessoa incrível que você é e a amizade preciosa que construímos juntos.</p>
                 </div>
             </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <h2 class="fade-in">O Que Te Torna Especial</h2>
+            </div>
+            <div class="qualities-container">
+                <div class="quality-item fade-in">
+                    <div class="quality-icon"><i class="fas fa-heart"></i></div>
+                    <div class="quality-text">Coração Generoso</div>
+                </div>
+                <div class="quality-item fade-in">
+                    <div class="quality-icon"><i class="fas fa-laugh-beam"></i></div>
+                    <div class="quality-text">Riso Contagiante</div>
+                </div>
+                <div class="quality-item fade-in">
+                    <div class="quality-icon"><i class="fas fa-handshake"></i></div>
+                    <div class="quality-text">Lealdade Inabalável</div>
+                </div>
+                <div class="quality-item fade-in">
+                    <div class="quality-icon"><i class="fas fa-lightbulb"></i></div>
+                    <div class="quality-text">Sabedoria Única</div>
+                </div>
+                <div class="quality-item fade-in">
+                    <div class="quality-icon"><i class="fas fa-rocket"></i></div>
+                    <div class="quality-text">Espírito Aventureiro</div>
+                </div>
+                <div class="quality-item fade-in">
+                    <div class="quality-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="quality-text">Força Inspiradora</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <h2 class="fade-in">Memórias que Guardo</h2>
+            </div>
+            <div class="card fade-in">
+                <div class="memories-container">
+                    <div class="memory">
+                        <div class="memory-number">I</div>
+                        <div class="memory-content">
+                            <div class="memory-title">O Primeiro Encontro</div>
+                            <div class="memory-description">
+                                Lembro como se fosse hoje da primeira vez que nos vimos. Havia algo no seu jeito que instantaneamente me cativou, e naquela primeira conversa eu já sabia que encontraria uma amiga para a vida toda.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="memory">
+                        <div class="memory-number">II</div>
+                        <div class="memory-content">
+                            <div class="memory-title">Noites de Conversa</div>
+                            <div class="memory-description">
+                                Nossas longas chamadas e noites falando sobre tudo e nada são alguns dos meus momentos favoritos. É nessas horas que sinto que posso compartilhar meus sonhos, medos e bobagens sem medo de julgamento.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="memory">
+                        <div class="memory-number">III</div>
+                        <div class="memory-content">
+                            <div class="memory-title">Presente nos Momentos Importantes</div>
+                            <div class="memory-description">
+                                Você sempre aparece nos momentos certos: para celebrar uma conquista, apoiar em uma dificuldade ou simplesmente para passar um tempo juntas. Sua presença constante é um presente que nunca deixo de agradecer.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="poem-container fade-in">
+            <div class="poem-quote quote-left">"</div>
+            <div class="poem">
+                A amizade verdadeira é como uma estrela<br>
+                Que brilha constante no céu noturno,<br>
+                Guiando nossos passos<br>
+                E iluminando nosso caminho.<br><br>
+                
+                É o porto seguro nas tempestades,<br>
+                O abraço que aquece na solidão,<br>
+                A palavra certa no momento exato,<br>
+                O sorriso que cura qualquer dor.<br><br>
+                
+                Você é essa estrela em minha vida,<br>
+                Essa luz que nunca se apaga,<br>
+                Essa presença que transforma<br>
+                Tudo em algo mais bonito.
+            </div>
+            <div class="poem-quote quote-right">"</div>
         </div>
-        
+
+        <section class="section">
+            <div class="section-header">
+                <h2 class="fade-in">Mensagem Especial</h2>
+            </div>
+            <div class="secret-container fade-in">
+                <button class="secret-button" id="secretBtn">
+                    <i class="fas fa-gift"></i> Abrir Mensagem Especial
+                </button>
+                <div class="secret-message" id="secretMessage">
+                    <div class="secret-text">
+                        <p>Querida Duda,</p>
+                        <p>Quero que saiba o quanto você é importante para mim. Em um mundo que constantemente tenta nos definir por conquistas e aparências, você me lembra do valor das conexões verdadeiras.</p>
+                        <p>Sua amizade me ensinou que as melhores coisas da vida não são coisas, mas sim momentos compartilhados, risadas sinceras e silêncios confortáveis.</p>
+                        <p>Prometo continuar valorizando nossa amizade, celebrando suas conquistas como se fossem minhas, apoiando você nos desafios e sempre reservando um espaço especial em minha vida para você.</p>
+                        <p>Que nossa amizade continue crescendo, aprendendo e se fortalecendo com o tempo. Que possamos envelhecer juntas, acumulando memórias e histórias para contar.</p>
+                        <p style="margin-top: 30px; font-weight: bold; color: #64b4ff;">Com toda a gratidão e carinho do mundo,</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <footer>
-            <div class="floating-elements" id="floating-elements"></div>
-            <div class="friendship-heart">
-                <i class="fas fa-heart"></i>
-            </div>
-            <p>Este site foi feito especialmente para você, Duda, para celebrar nossa amizade!</p>
-            <p>Nada poderia substituir o que temos, mas espero que isso mostre um pouquinho do quanto você significa para mim.</p>
-            <p style="margin-top: 20px; font-size: 1.2rem;">❤️ Para sempre sua amiga ❤️</p>
-            
-            <div style="margin-top: 30px; font-size: 0.9rem; color: #aaa;">
-                Criado com <i class="fas fa-heart" style="color: var(--primary);"></i> especialmente para a Duda
-            </div>
+            <div class="footer-glow"></div>
+            <div class="heart-pulse"><i class="fas fa-star"></i></div>
+            <div class="signature fade-in">Sua amiga para sempre</div>
+            <div class="closing fade-in">"A amizade duplica as alegrias e divide as tristezas." - Francis Bacon<br>Obrigada por fazer parte da minha jornada.</div>
         </footer>
     </div>
 
     <script>
-        // Criar elementos flutuantes no footer
-        function createFloatingElements() {
-            const container = document.getElementById('floating-elements');
-            const elementCount = 15;
-            const elements = ['❤️', '⭐', '✨', '🌸', '💫', '💖', '🌺', '🌟'];
+        function createParticles() {
+            const container = document.getElementById('particles');
+            const particleCount = 40;
             
-            for (let i = 0; i < elementCount; i++) {
-                const element = document.createElement('div');
-                element.classList.add('floating-element');
-                element.innerHTML = elements[Math.floor(Math.random() * elements.length)];
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
                 
-                // Posição aleatória
-                element.style.left = Math.random() * 100 + '%';
-                element.style.top = Math.random() * 100 + '%';
+                const size = 2 + Math.random() * 5;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
                 
-                // Tamanho aleatório
-                const size = Math.random() * 20 + 15;
-                element.style.fontSize = size + 'px';
+                const left = Math.random() * 100;
+                particle.style.left = `${left}%`;
                 
-                // Animação com duração aleatória
-                const duration = Math.random() * 10 + 20;
-                element.style.animationDuration = duration + 's';
+                const delay = Math.random() * 20;
+                const duration = 15 + Math.random() * 15;
                 
-                // Atraso aleatório
-                const delay = Math.random() * 5;
-                element.style.animationDelay = delay + 's';
+                particle.style.animationDelay = `${delay}s`;
+                particle.style.animationDuration = `${duration}s`;
                 
-                container.appendChild(element);
+                const opacity = 0.1 + Math.random() * 0.2;
+                particle.style.opacity = opacity;
+                
+                container.appendChild(particle);
             }
         }
-        
-        // Efeito de digitação no subtítulo
-        function typeWriterEffect() {
-            const subtitle = document.querySelector('.subtitle');
-            const text = subtitle.innerHTML;
-            subtitle.innerHTML = '';
+
+        // Já personalizado com o nome "Duda"
+        document.addEventListener('DOMContentLoaded', function() {
+            // O nome já está definido como "Duda" no HTML, então não precisa do prompt
+            // Mas mantemos a lógica caso queira mudar facilmente
             
-            let i = 0;
-            const speed = 50;
+            createParticles();
             
-            function typeWriter() {
-                if (i < text.length) {
-                    subtitle.innerHTML += text.charAt(i);
-                    i++;
-                    setTimeout(typeWriter, speed);
+            // Revelar mensagem secreta
+            document.getElementById('secretBtn').addEventListener('click', function() {
+                const secretMessage = document.getElementById('secretMessage');
+                secretMessage.style.display = 'block';
+                this.style.display = 'none';
+                
+                secretMessage.style.animation = 'fadeInUp 0.8s ease';
+                
+                for (let i = 0; i < 15; i++) {
+                    setTimeout(() => {
+                        const particle = document.createElement('div');
+                        particle.classList.add('particle');
+                        particle.style.width = '3px';
+                        particle.style.height = '3px';
+                        particle.style.left = `${30 + Math.random() * 40}%`;
+                        particle.style.top = '50%';
+                        particle.style.background = 'rgba(100, 200, 255, 0.4)';
+                        particle.style.animationDuration = '3s';
+                        
+                        document.getElementById('particles').appendChild(particle);
+                        
+                        setTimeout(() => {
+                            particle.remove();
+                        }, 3000);
+                    }, i * 100);
                 }
-            }
+            });
             
-            // Iniciar efeito após a página carregar
-            setTimeout(typeWriter, 800);
-        }
-        
-        // Efeito de entrada dos cards
-        function animateCards() {
-            const cards = document.querySelectorAll('.card');
-            
-            const observer = new IntersectionObserver((entries) => {
+            // Observador para efeitos de entrada
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.classList.add('visible');
                     }
                 });
-            }, { threshold: 0.1 });
-            
-            cards.forEach(card => {
-                card.style.opacity = '0';
-                card.style.transform = 'translateY(30px)';
-                card.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-                observer.observe(card);
+            }, observerOptions);
+
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(el => {
+                observer.observe(el);
             });
-        }
-        
-        // Efeito de corações no título
-        function createTitleHearts() {
-            const title = document.querySelector('h1');
-            const heart = document.createElement('span');
-            heart.innerHTML = '❤️';
-            heart.style.position = 'absolute';
-            heart.style.fontSize = '2rem';
-            heart.style.opacity = '0.8';
-            heart.style.animation = 'float 5s ease-in-out infinite';
-            heart.style.left = '-30px';
-            heart.style.top = '10px';
-            
-            const heart2 = document.createElement('span');
-            heart2.innerHTML = '❤️';
-            heart2.style.position = 'absolute';
-            heart2.style.fontSize = '1.8rem';
-            heart2.style.opacity = '0.7';
-            heart2.style.animation = 'float 6s ease-in-out infinite reverse';
-            heart2.style.right = '-25px';
-            heart2.style.bottom = '10px';
-            
-            title.style.position = 'relative';
-            title.appendChild(heart);
-            title.appendChild(heart2);
-        }
-        
-        // Inicializar quando a página carregar
-        document.addEventListener('DOMContentLoaded', function() {
-            createFloatingElements();
-            typeWriterEffect();
-            animateCards();
-            createTitleHearts();
-            
-            // Adicionar efeito de clique nos botões de qualidade
-            const qualities = document.querySelectorAll('.quality');
-            qualities.forEach(quality => {
-                quality.addEventListener('click', function() {
-                    this.style.transform = 'scale(1.1)';
-                    setTimeout(() => {
-                        this.style.transform = '';
-                    }, 300);
+
+            // Efeito de digitação
+            const messages = document.querySelectorAll('.message p');
+            messages.forEach(p => {
+                const originalText = p.innerHTML;
+                p.innerHTML = '';
+                
+                let i = 0;
+                const speed = 30;
+                
+                const typeWriter = () => {
+                    if (i < originalText.length) {
+                        p.innerHTML += originalText.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, speed);
+                    }
+                };
+                
+                const messageObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            typeWriter();
+                            messageObserver.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+                
+                messageObserver.observe(p);
+            });
+
+            // Efeito hover nas qualidades
+            const qualityItems = document.querySelectorAll('.quality-item');
+            qualityItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    const icon = this.querySelector('.quality-icon i');
+                    icon.style.transform = 'scale(1.3) rotate(10deg)';
+                    icon.style.transition = 'transform 0.4s ease';
+                    icon.style.textShadow = '0 0 20px rgba(100, 200, 255, 0.8)';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    const icon = this.querySelector('.quality-icon i');
+                    icon.style.transform = 'scale(1) rotate(0deg)';
+                    icon.style.textShadow = '0 0 15px rgba(100, 180, 255, 0.5)';
                 });
             });
-        });
-        
-        // Efeito de confete ao clicar no botão
-        document.querySelector('.action-button').addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            
-            if (targetElement) {
-                targetElement.scrollIntoView({ behavior: 'smooth' });
-                
-                // Efeito visual
-                this.style.background = 'linear-gradient(135deg, #ff4081, #6a5af9)';
-                setTimeout(() => {
-                    this.style.background = 'var(--gradient)';
-                }, 500);
-            }
         });
     </script>
 </body>
