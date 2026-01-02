@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para minha melhor amiga Duda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #ff6b9d;
+            --primary-light: #ff9ac8;
+            --primary-dark: #e91e63;
+            --secondary: #6a5af9;
+            --secondary-light: #8a7cff;
+            --accent: #ffcc00;
+            --light: #fff9fb;
+            --dark: #333333;
+            --gray: #6c757d;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            --gradient: linear-gradient(135deg, #ff6b9d, #6a5af9);
+            --gradient-light: linear-gradient(135deg, #ffd6e7, #e0d5ff);
+        }
+        
+        body {
+            background: var(--gradient-light);
+            color: var(--dark);
+            line-height: 1.6;
+            min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header e título */
+        header {
+            text-align: center;
+            padding: 60px 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 25px;
+            box-shadow: var(--shadow);
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .decorative-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ff6b9d' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.5;
+            z-index: 0;
+        }
+        
+        h1 {
+            color: transparent;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            font-size: 4rem;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+            font-family: 'Dancing Script', cursive;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+            letter-spacing: 1px;
+        }
+        
+        .subtitle {
+            font-size: 1.6rem;
+            color: var(--gray);
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+            font-weight: 500;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .highlight {
+            color: var(--primary-dark);
+            font-weight: 700;
+            background: linear-gradient(transparent 70%, rgba(255, 107, 157, 0.2) 70%);
+            padding: 0 5px;
+        }
+        
+        /* Seção da foto */
+        .photo-section {
+            margin: 40px 0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .photo-frame {
+            display: inline-block;
+            position: relative;
+            padding: 20px;
+            background: var(--gradient);
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(106, 90, 249, 0.3);
+            transition: var(--transition);
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        
+        .friend-photo {
+            width: 250px;
+            height: 250px;
+            border-radius: 20px;
+            object-fit: cover;
+            border: 8px solid white;
+            display: block;
+            transition: var(--transition);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .friend-photo:hover {
+            transform: scale(1.03) rotate(2deg);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+        
+        .photo-label {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: var(--primary-dark);
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .photo-label::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50%;
+            height: 3px;
+            background: var(--gradient);
+            border-radius: 3px;
+        }
+        
+        .quote {
+            font-style: italic;
+            font-size: 1.3rem;
+            color: var(--gray);
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 20px;
+            position: relative;
+            z-index: 1;
+            box-shadow: var(--shadow);
+            border-left: 8px solid var(--primary);
+            line-height: 1.8;
+        }
+        
+        .quote::before {
+            content: '"';
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            font-size: 5rem;
+            color: var(--primary-light);
+            font-family: 'Dancing Script', cursive;
+            opacity: 0.3;
+        }
+        
+        /* Cards */
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 25px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            border-top: 5px solid transparent;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient);
+        }
+        
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .card h2 {
+            color: var(--dark);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.8rem;
+        }
+        
+        .card h2 i {
+            font-size: 1.8rem;
+            color: var(--primary);
+            background: rgba(255, 107, 157, 0.1);
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        
+        /* Memórias */
+        .memories ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .memories li {
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            transition: var(--transition);
+        }
+        
+        .memories li:hover {
+            transform: translateX(10px);
+            background: rgba(255, 107, 157, 0.03);
+            padding-left: 10px;
+            border-radius: 10px;
+        }
+        
+        .memories li:last-child {
+            border-bottom: none;
+        }
+        
+        .memories li i {
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-top: 3px;
+            flex-shrink: 0;
+        }
+        
+        /* Qualidades */
+        .qualities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        
+        .quality {
+            background: linear-gradient(135deg, rgba(255, 107, 157, 0.1), rgba(106, 90, 249, 0.1));
+            color: var(--primary-dark);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: var(--transition);
+            border: 1px solid rgba(255, 107, 157, 0.2);
+        }
+        
+        .quality:hover {
+            background: linear-gradient(135deg, rgba(255, 107, 157, 0.2), rgba(106, 90, 249, 0.2));
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        /* Mensagem */
+        .message {
+            line-height: 1.9;
+            font-size: 1.1rem;
+        }
+        
+        .message p {
+            margin-bottom: 20px;
+        }
+        
+        .signature {
+            text-align: right;
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: var(--primary-dark);
+            margin-top: 30px;
+            font-family: 'Dancing Script', cursive;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 30px;
+            color: var(--gray);
+            background-color: white;
+            border-radius: 25px;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .friendship-heart {
+            color: var(--primary);
+            font-size: 3rem;
+            margin: 20px 0;
+            animation: heartbeat 1.8s infinite;
+        }
+        
+        @keyframes heartbeat {
+            0%, 50%, 100% { transform: scale(1); }
+            30%, 80% { transform: scale(1.2); }
+        }
+        
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .floating-element {
+            position: absolute;
+            color: var(--primary-light);
+            font-size: 24px;
+            opacity: 0.1;
+            animation: floatAround 20s infinite linear;
+        }
+        
+        @keyframes floatAround {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(100px, 50px) rotate(90deg); }
+            50% { transform: translate(50px, 100px) rotate(180deg); }
+            75% { transform: translate(-50px, 50px) rotate(270deg); }
+            100% { transform: translate(0, 0) rotate(360deg); }
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+            
+            .subtitle {
+                font-size: 1.3rem;
+            }
+            
+            .content {
+                grid-template-columns: 1fr;
+            }
+            
+            .friend-photo {
+                width: 200px;
+                height: 200px;
+            }
+            
+            .card {
+                padding: 25px;
+            }
+            
+            header {
+                padding: 40px 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .friend-photo {
+                width: 180px;
+                height: 180px;
+            }
+            
+            .photo-frame {
+                padding: 15px;
+            }
+            
+            .quote {
+                padding: 20px;
+                font-size: 1.1rem;
+            }
+        }
+        
+        /* Botão de ação */
+        .action-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: var(--gradient);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 10px 20px rgba(106, 90, 249, 0.3);
+            text-decoration: none;
+        }
+        
+        .action-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(106, 90, 249, 0.4);
+        }
+        
+        .action-button:active {
+            transform: translateY(-2px);
+        }
+        
+        /* Scroll personalizado */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--gradient);
+            border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, var(--primary-dark), var(--secondary-light));
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="decorative-bg"></div>
+            <h1>Para a Duda</h1>
+            <p class="subtitle">Minha <span class="highlight">MELHOR AMIGA</span> de todos os tempos</p>
+            
+            <!-- Foto da Duda -->
+            <div class="photo-section">
+                <div class="photo-frame">
+                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" alt="Duda" class="friend-photo">
+                </div>
+                <div class="photo-label">Duda</div>
+            </div>
+            
+            <p class="quote">
+                "Uma verdadeira amizade é aquela que nos segue por toda a vida, 
+                nos apoia nos momentos mais difíceis e celebra cada conquista. 
+                Duda, você é esse presente na minha vida."
+            </p>
+            
+            <a href="#message" class="action-button">
+                <i class="fas fa-heart"></i> Mensagem Especial
+            </a>
+        </header>
+        
+        <div class="content">
+            <div class="card memories">
+                <h2><i class="fas fa-heart"></i> Nossas Memórias</h2>
+                <ul>
+                    <li><i class="fas fa-star"></i> Aquele dia na praia que ficamos rindo sem parar</li>
+                    <li><i class="fas fa-star"></i> As conversas intermináveis até de madrugada</li>
+                    <li><i class="fas fa-star"></i> A vez que você me ajudou quando eu mais precisei</li>
+                    <li><i class="fas fa-star"></i> Todas as aventuras que vivemos juntas</li>
+                    <li><i class="fas fa-star"></i> Cada risada compartilhada e cada segredo confiado</li>
+                    <li><i class="fas fa-star"></i> Nossas viagens inesquecíveis e planos para o futuro</li>
+                </ul>
+            </div>
+            
+            <div class="card qualities-card">
+                <h2><i class="fas fa-gem"></i> Suas Qualidades</h2>
+                <p>Duda, você é uma pessoa incrível e estas são apenas algumas das muitas qualidades que admiro em você:</p>
+                <div class="qualities">
+                    <span class="quality">Leal</span>
+                    <span class="quality">Divertida</span>
+                    <span class="quality">Atenciosa</span>
+                    <span class="quality">Inteligente</span>
+                    <span class="quality">Empática</span>
+                    <span class="quality">Corajosa</span>
+                    <span class="quality">Criativa</span>
+                    <span class="quality">Sincera</span>
+                    <span class="quality">Otimista</span>
+                    <span class="quality">Generosa</span>
+                    <span class="quality">Confidente</span>
+                    <span class="quality">Inspiradora</span>
+                    <span class="quality">Acolhedora</span>
+                    <span class="quality">Resiliente</span>
+                    <span class="quality">Fiel</span>
+                    <span class="quality">Adorável</span>
+                </div>
+            </div>
+            
+            <div class="card message-card" id="message">
+                <h2><i class="fas fa-envelope-open-text"></i> Minha Mensagem para Você</h2>
+                <div class="message">
+                    <p>Querida Duda,</p>
+                    <p>Não tenho palavras para expressar o quanto você é importante na minha vida. Em todos os momentos, bons ou difíceis, você sempre esteve ao meu lado, me apoiando, me entendendo e me fazendo rir mesmo nos dias mais cinzentos.</p>
+                    <p>Você é mais do que uma amiga, é uma irmã que a vida me deu. Compartilhamos sonhos, segredos, risadas e até lágrimas. Cada memória que criamos juntas é um tesouro que guardo com muito carinho no meu coração.</p>
+                    <p>Obrigada por ser exatamente quem você é: autêntica, maravilhosa e a melhor amiga que alguém poderia ter. Que nossa amizade continue crescendo e florescendo por muitos e muitos anos!</p>
+                    <p>Eu te amo muito, minha amiga!</p>
+                    <div class="signature">Com todo o meu carinho,<br>Sua amiga para sempre ❤️</div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="floating-elements" id="floating-elements"></div>
+            <div class="friendship-heart">
+                <i class="fas fa-heart"></i>
+            </div>
+            <p>Este site foi feito especialmente para você, Duda, para celebrar nossa amizade!</p>
+            <p>Nada poderia substituir o que temos, mas espero que isso mostre um pouquinho do quanto você significa para mim.</p>
+            <p style="margin-top: 20px; font-size: 1.2rem;">❤️ Para sempre sua amiga ❤️</p>
+            
+            <div style="margin-top: 30px; font-size: 0.9rem; color: #aaa;">
+                Criado com <i class="fas fa-heart" style="color: var(--primary);"></i> especialmente para a Duda
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Criar elementos flutuantes no footer
+        function createFloatingElements() {
+            const container = document.getElementById('floating-elements');
+            const elementCount = 15;
+            const elements = ['❤️', '⭐', '✨', '🌸', '💫', '💖', '🌺', '🌟'];
+            
+            for (let i = 0; i < elementCount; i++) {
+                const element = document.createElement('div');
+                element.classList.add('floating-element');
+                element.innerHTML = elements[Math.floor(Math.random() * elements.length)];
+                
+                // Posição aleatória
+                element.style.left = Math.random() * 100 + '%';
+                element.style.top = Math.random() * 100 + '%';
+                
+                // Tamanho aleatório
+                const size = Math.random() * 20 + 15;
+                element.style.fontSize = size + 'px';
+                
+                // Animação com duração aleatória
+                const duration = Math.random() * 10 + 20;
+                element.style.animationDuration = duration + 's';
+                
+                // Atraso aleatório
+                const delay = Math.random() * 5;
+                element.style.animationDelay = delay + 's';
+                
+                container.appendChild(element);
+            }
+        }
+        
+        // Efeito de digitação no subtítulo
+        function typeWriterEffect() {
+            const subtitle = document.querySelector('.subtitle');
+            const text = subtitle.innerHTML;
+            subtitle.innerHTML = '';
+            
+            let i = 0;
+            const speed = 50;
+            
+            function typeWriter() {
+                if (i < text.length) {
+                    subtitle.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                }
+            }
+            
+            // Iniciar efeito após a página carregar
+            setTimeout(typeWriter, 800);
+        }
+        
+        // Efeito de entrada dos cards
+        function animateCards() {
+            const cards = document.querySelectorAll('.card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                observer.observe(card);
+            });
+        }
+        
+        // Efeito de corações no título
+        function createTitleHearts() {
+            const title = document.querySelector('h1');
+            const heart = document.createElement('span');
+            heart.innerHTML = '❤️';
+            heart.style.position = 'absolute';
+            heart.style.fontSize = '2rem';
+            heart.style.opacity = '0.8';
+            heart.style.animation = 'float 5s ease-in-out infinite';
+            heart.style.left = '-30px';
+            heart.style.top = '10px';
+            
+            const heart2 = document.createElement('span');
+            heart2.innerHTML = '❤️';
+            heart2.style.position = 'absolute';
+            heart2.style.fontSize = '1.8rem';
+            heart2.style.opacity = '0.7';
+            heart2.style.animation = 'float 6s ease-in-out infinite reverse';
+            heart2.style.right = '-25px';
+            heart2.style.bottom = '10px';
+            
+            title.style.position = 'relative';
+            title.appendChild(heart);
+            title.appendChild(heart2);
+        }
+        
+        // Inicializar quando a página carregar
+        document.addEventListener('DOMContentLoaded', function() {
+            createFloatingElements();
+            typeWriterEffect();
+            animateCards();
+            createTitleHearts();
+            
+            // Adicionar efeito de clique nos botões de qualidade
+            const qualities = document.querySelectorAll('.quality');
+            qualities.forEach(quality => {
+                quality.addEventListener('click', function() {
+                    this.style.transform = 'scale(1.1)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 300);
+                });
+            });
+        });
+        
+        // Efeito de confete ao clicar no botão
+        document.querySelector('.action-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+                
+                // Efeito visual
+                this.style.background = 'linear-gradient(135deg, #ff4081, #6a5af9)';
+                setTimeout(() => {
+                    this.style.background = 'var(--gradient)';
+                }, 500);
+            }
+        });
+    </script>
+</body>
+</html>
